@@ -47,6 +47,9 @@ small{
     height:auto;
     border-radius:5px;
     padding:0;
+    padding-bottom:30px;
+    margin-bottom:30px;
+    box-shadow: 4px 0 2px rgba(0,0,0,0.22),0 4px 1px regba(0,0,0,0.22),0 4px 1px regba(0,0,0,0.22);
 }
 
 #top-box{
@@ -55,6 +58,8 @@ small{
     color:#000;
     background:#F9F9F9;
     padding-top:30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     
 }
 
@@ -126,10 +131,13 @@ small{
 
 #name,#email-address, #cal, #residential, #phone, #secretPin{
     color:rgba(153, 153, 153, 0.802);
+   
 }
 
 #fullName, #email, #calendar, #address, #phoneNumber, #password{
     font-size:1.7rem;
     font-weight:bold;
     color:#000;
+    display: block;
 }
+
