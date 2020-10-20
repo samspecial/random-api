@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Random User App">
+  <meta name="description" content="This app displays yhe details of random users">
+  <meta name="keywords" content="Random, User, UI, App, Details, People, Human, Location, Origin, Gender">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random User</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <span class="nav-icon">
+              <i class="fa fa-home"></i> Home</span>
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="nav-icon">
+              <i class="far fa-user"></i>User Photos</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="nav-icon">
+              <i class="fa fa-home"></i> Documentations</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="nav-icon">
+              <i class="fa fa-pencil-alt"></i>
+              Change Log</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="nav-icon">
+              <i class="fas fa-project-diagram"></i>
+              Stats &amp; Graphs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="nav-icon">
+              <i class="far fa-heart"></i>
+              Donate</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="nav-icon">
+              <i class="far fa-copyright"></i>
+              Copyright Notice</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="nav-icon">
+              <i class="fas fa-project-diagram"></i>
+              PhotoShop Extension </span>
+          </a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <section class="container-fluid first-section">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 col-sm-12 text-center">
+        <h3 class="h3">
+          RANDOM USER GENERATOR
+        </h3>
+        <p>A free,
+          <a href="https://github.com/RandomAPI/Randomuser.me-Node">open-source</a> API for generating random user data. Like Lorem Ipsum, but for people.</p>
+        <a href="https://twitter.com/randomapi">
+          <i class="fab fa-twitter"></i>
+          <small>Follow us @randomapi</small>
+        </a>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </section>
+
+  <section class="container boxed-section">
+    <div>
+      <div id="top-box">
+        <div class="img-box">
+          <img id="image-file" src="images/59.jpg" alt="">
+        </div>
+      </div>
+      <div id="bottom-box" class="row pt-5 text-center no-padding">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-sm-12">
+          <span class="btn btn-danger" id="btn">NEW</span>
+          <!-- Paragraphs -->
+
+          <p id="name">Hi, my name is
+            <br>
+            <span id="fullName"></span>
+          </p>
+          <p id="email-address">My email address is
+            <br>
+            <span id="email"></span>
+          </p>
+          <p id="cal">My birthday is
+            <br>
+            <span id="calendar"></span>
+          </p>
+          <p id="residential">My address is
+            <br>
+            <span id="address"></span>
+          </p>
+          <p id="phone">My phone number is
+            <br>
+            <span id="phoneNumber"></span>
+          </p>
+          <p id="secretPin">My password is
+            <br>
+            <span id="password"></span>
+          </p>
+          <!-- Call to Action Icons -->
+          <span class="my-3" id="action-icons">
+            <i id="1" onmouseenter="getUserDetails(this, 'name')" onmouseleave="resetUserDetails(this, 'name')" class="icon far fa-user"></i>
+            <i id="2" onmouseenter="getUserDetails(this, 'email-address');" onmouseleave="resetUserDetails(this, 'email-address')" class="icon far fa-envelope"></i>
+            <i id="3" onmouseenter="getUserDetails(this, 'cal');" onmouseleave="resetUserDetails(this, 'cal')" class="icon far fa-calendar"></i>
+            <i id="4" onmouseenter="getUserDetails(this, 'residential');" onmouseleave="resetUserDetails(this, 'residential')" class="icon fas fa-map-marked-alt"></i>
+            <i id="5" onmouseenter="getUserDetails(this, 'phone');" onmouseleave="resetUserDetails(this, 'phone')" class="icon fa fa-phone-alt"></i>
+            <i id="6" onmouseenter="getUserDetails(this, 'secretPin');" onmouseleave="resetUserDetails(this, 'secretPin')" class="icon fa fa-lock"></i>
+          </span>
+        </div>
+
+
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+  <script src="https://kit.fontawesome.com/3da1a747b2.js"></script>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+
+<!-- User -->
+<!-- calendar-alt -->
+<!-- envelope -->
+<!-- <i class="far fa-map-marker-alt"><i> -->
+<!-- <i class="fa phone-alt"><i> -->
+<!-- <i class="far fa-map-marker-alt"><i> -->
+<!-- <i class="far fa-lock"><i> -->
+<!-- color:#83BA43 -->
